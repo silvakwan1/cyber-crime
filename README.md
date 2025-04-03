@@ -62,3 +62,5 @@ Se proteger contra crimes cibernéticos é essencial. Algumas dicas básicas inc
 ✅ Organizei o código para **melhor legibilidade**.
 
 Se quiser mais alguma mudança, só avisar! 🚀
+
+🔗 **Preview para a porfessora:** [kadidja](https://silvakwan1.github.io/botao-yes-or-not/data/?id=67eef8d233f9f7980a1a6c1f)
