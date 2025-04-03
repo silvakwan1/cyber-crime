@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 
-export default function DataLeakForm({ onClose }) {
+interface DataLeakFormProps {
+  onClose: () => void; // Função para fechar o modal
+}
+
+export default function DataLeakForm({ onClose }: DataLeakFormProps) {
   const [name, setName] = useState("");
   const [cpf, setCpf] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     if (!name || !cpf) {
       alert("Preencha todos os campos!");

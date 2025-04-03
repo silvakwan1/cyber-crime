@@ -30,8 +30,11 @@ const events = [
     icon: <ShieldCheck className="text-yellow-500" size={32} />,
   },
 ];
+interface PhreakingTimelineProps {
+  onClose: () => void; // Função para fechar o modal
+}
 
-export default function PhreakingTimeline({ onClose }) {
+export default function PhreakingTimeline({ onClose }: PhreakingTimelineProps) {
   const [selected, setSelected] = useState(0);
 
   return (

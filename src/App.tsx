@@ -10,7 +10,7 @@ function App() {
   const [showPhreakingTimeline, setShowPhreakingTimeline] = useState(false);
   const [showDataLeakForm, setShowDataLeakForm] = useState(false);
   const [showRansomwareSimulator, setShowRansomwareSimulator] = useState(false);
-  const handleClick = (ano) => {
+  const handleClick = (ano: string) => {
     switch (ano) {
       case "1970":
         setShowPhreakingTimeline(true);

@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
-export default function RansomwareSimulator({ onClose }) {
+interface RansomwareSimulatorProps {
+  onClose: () => void; // Função para fechar o modal
+}
+
+export default function RansomwareSimulator({
+  onClose,
+}: RansomwareSimulatorProps) {
   const originalText =
     "O ransomware é um tipo de malware que criptografa arquivos e exige um pagamento para restaurar o acesso a eles. Muitas vítimas acabam pagando, mas nem sempre os dados são recuperados.";
 
@@ -23,7 +29,7 @@ export default function RansomwareSimulator({ onClose }) {
   }, []);
 
   // Função para criptografar o texto (substitui por caracteres aleatórios)
-  const encryptText = (text) => {
+  const encryptText = (text: string) => {
     return text
       .split("")
       .map((char) =>
